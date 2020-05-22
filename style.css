@@ -1,0 +1,327 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.4;
+    font-size: 10px;
+    background: #eee;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    cursor: pointer;
+}
+
+p {
+    margin: .75rem 0;
+}
+
+#header {
+    max-width: 1280px;
+    padding: 2rem;
+    position: sticky;
+    top: 0;
+    margin: 0 auto;
+    width: 1140px;
+    background: #eee;
+}
+
+#header .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+#header #header-img {
+    width: 30rem;
+    height: 4.5rem;
+    align-self: center;
+}
+
+#header #nav-bar ul {
+    display: flex;
+}
+
+#header #nav-bar ul li {
+    padding: 2rem;
+}
+
+#header #nav-bar ul li .nav-link {
+    font-size: 1.8rem;
+}
+
+#subscription {
+    max-width: 1280px;
+    text-align: center;
+    margin: 3rem auto;
+}
+
+#subscription h2 {
+    font-size: 3rem;
+}
+
+#subscription #form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#subscription #form #email {
+    width: 30rem;
+    height: 3rem;
+    margin-top: 1rem;
+}
+
+#subscription #form input[type="submit"] {
+    background: #f1c40f;
+    border: none;
+    padding: 1rem 2.5rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    font-size: 1.7rem;
+}
+
+#subscription #form input[type="submit"]:hover {
+    background: orange;
+}
+
+#features {
+    max-width: 1140px;
+    width: 70%;
+    margin: 12rem auto 3rem auto;
+}
+
+#features .delivery-item {
+    display: flex;
+    margin-bottom: 3rem;
+}
+
+#features .delivery-item i {
+    color: darkorange;
+    padding: 1rem 4rem;
+    font-size: 5rem;
+}
+
+#features .delivery-item:first-of-type i {
+    margin-right: 2.5rem;
+}
+
+#features .delivery-item .delivery-item-text {
+    margin-left: 1rem;
+}
+
+#features .delivery-item .delivery-item-text h2 {
+    font-size: 2rem;
+}
+
+#features .delivery-item .delivery-item-text p {
+    font-size: 1.5rem;
+}
+
+#works {
+    max-width: 1280px;
+    margin: 2rem auto;
+}
+
+#works #video {
+    margin-left: 40rem;
+}
+
+#pricing {
+    max-width: 1280px;
+    width: 90rem;
+    margin: 3rem auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#pricing .box {
+    height: 30rem;
+    flex-basis: 32%;
+    border: 1px solid #333;
+    text-align: center;
+}
+
+#pricing .box div:first-of-type {
+    background: #ddd;
+    padding: 1rem;
+    font-size: 1.4rem;
+}
+
+#pricing .box > h2 {
+    font-size: 2.5rem;
+    padding: 1rem;
+}
+
+#pricing .box div:last-of-type {
+    font-size: 1.6rem;
+}
+
+#pricing .box button {
+    padding: 1rem 2rem;
+    margin-top: 2rem;
+    background: #f1c40f;
+    border: none;
+}
+
+#pricing .box button:hover {
+    background: orange;
+}
+
+#footer {
+    max-width: 1280px;
+    width: 95rem;
+    margin: 0 auto;
+    padding: 1rem;
+    background: #ddd;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#footer p:first-of-type {
+    margin: 0;
+}
+
+#footer p:first-of-type a {
+    padding: .5rem;
+    font-size: 1.5rem;
+}
+
+#footer p:last-of-type {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+@media only screen and (max-width: 768px) {
+    #header {
+        padding: 1rem;
+        left: 0;
+        width: 100vw;
+    }
+    
+    #header .wrapper {
+        flex-direction: column;
+    }
+    #header #header-img {
+        width: 25rem;
+        height: 4rem;
+    }
+    
+    #header #nav-bar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #header #nav-bar ul li {
+        padding: .2rem;
+    }
+    
+    #header #nav-bar ul li .nav-link {
+        font-size: 1.4rem;
+    }
+    
+    #subscription h2 {
+        font-size: 2rem;
+        padding: .1rem;
+    }
+
+    #features {
+        width: 90%;
+        margin: 5rem auto 3rem auto;
+    }
+    
+    #features .delivery-item {
+        flex-direction: column;
+        margin-bottom: 3rem;
+        text-align: center;
+    }
+    
+    #features .delivery-item i {
+        color: darkorange;
+        padding: 1rem 4rem;
+        font-size: 5rem;
+    }
+    
+    #features .delivery-item:first-of-type i {
+        margin-right: 0;
+    }
+
+    #features .delivery-item i {
+        font-size: 3.5rem;
+    }
+    
+    #features .delivery-item .delivery-item-text {
+        margin-left: 0;
+    }
+    
+    #features .delivery-item .delivery-item-text h2 {
+        font-size: 1.8rem;
+    }
+    
+    #features .delivery-item .delivery-item-text p {
+        font-size: 1.2rem;
+    }
+
+    #works {
+        margin: 1rem auto;
+        height: 30vh;
+    }
+    
+    #works #video {
+        margin-left: 8%;
+        width: 84%;
+        height: 90%;
+    }
+
+    #pricing {
+        width: 100vw;
+        margin: 3rem auto;
+        flex-direction: column;
+    }
+    
+    #pricing .box {
+        margin: 1rem auto;
+        width: 30rem;
+    }
+    
+    #pricing .box div:first-of-type {
+        font-size: 1.3rem;
+    }
+    
+    #pricing .box > h2 {
+        font-size: 2rem;
+    }
+    
+    #pricing .box div:last-of-type {
+        font-size: 1.4rem;
+    }
+    
+    #pricing .box button {
+        margin: 1.2rem 0;
+    }
+
+    #footer {
+        width: 100vw;
+        margin: 0 auto;
+        padding: 2rem;
+        height: 10rem;
+    }
+
+    #footer p {
+        margin: 0;
+    }
+  }
